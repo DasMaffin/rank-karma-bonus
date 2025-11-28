@@ -21,7 +21,7 @@ end
 hook.Add("Initialize", "MyOverrideKarmaInitState", function()
     if KARMA then
         if KARMA.GiveReward then
-            -- Save original if you want to call it
+            -- Save original
             local oldGiveReward = KARMA.GiveReward
 
             function KARMA.GiveReward(ply, reward)
